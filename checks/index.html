@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Checks</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./img/coffee-place.jpg" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../allproducts/">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../allusers/">Users</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Manaul Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Checks</a>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <img src="./img/ss.jpg" class="admin_img" />
+            <h4 class="admin_name">Kelany</h4>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- -->
+    <div class="the_container">
+      <div class="container col-sm-8">
+        <table class="table accordion" id="accordionSection">
+          <thead>
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">total Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <div class="accordion-item">
+              <tr class="main_tr">
+                <td class="accord_class">
+                  <h2 class="accordion-header lessss">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseO"
+                    >
+                      Ahmed Kamel
+                    </button>
+                    <!-- <span>110</span> -->
+                  </h2>
+                </td>
+                <td class="tex_center">300</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div
+                    class="accordion-collapse collapse"
+                    id="collapseO"
+                    data-bs-parent="#accordionSection"
+                  >
+                    <div class="accordion-body">
+                      <table
+                        class="table accordion order_table"
+                        id="accordionSection2"
+                      >
+                        <thead>
+                          <tr>
+                            <th scope="col">OrderName</th>
+                            <th scope="col">total Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOo"
+                                  >
+                                    Tea
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">20</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseOo"
+                                  data-bs-parent="#accordionSection2"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCoffe"
+                                  >
+                                    Coffe
+                                  </button>
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseCoffe"
+                                  data-bs-parent="#accordionSection2"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMilk"
+                                  >
+                                    Milk
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseMilk"
+                                  data-bs-parent="#accordionSection2"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNescafe"
+                                  >
+                                    Nescafe
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseNescafe"
+                                  data-bs-parent="#accordionSection2"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </div>
+            <div class="accordion-item">
+              <tr class="main_tr">
+                <td class="accord_class">
+                  <h2 class="accordion-header lessss">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne"
+                    >
+                      Asser kamel
+                    </button>
+                  </h2>
+                </td>
+                <td class="tex_center">100</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div
+                    class="accordion-collapse collapse"
+                    id="collapseOne"
+                    data-bs-parent="#accordionSection"
+                  >
+                    <div class="accordion-body">
+                      <table
+                        class="table accordion order_table"
+                        id="accordionSection3"
+                      >
+                        <thead>
+                          <tr>
+                            <th scope="col">OrderName</th>
+                            <th scope="col">total Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOtea2"
+                                  >
+                                    Tea
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">20</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseOtea2"
+                                  data-bs-parent="#accordionSection3"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseCoffe2"
+                                  >
+                                    Coffe
+                                  </button>
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseCoffe2"
+                                  data-bs-parent="#accordionSection3"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMilk2"
+                                  >
+                                    Milk
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseMilk2"
+                                  data-bs-parent="#accordionSection3"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNescafe2"
+                                  >
+                                    Nescafe
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseNescafe2"
+                                  data-bs-parent="#accordionSection3"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </div>
+            <div class="accordion-item">
+              <tr class="main_tr">
+                <td class="accord_class">
+                  <h2 class="accordion-header lessss">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo"
+                    >
+                      Mohamed kelany
+                    </button>
+                    <!-- <span>110</span> -->
+                  </h2>
+                </td>
+                <td class="tex_center">100</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div
+                    class="accordion-collapse collapse"
+                    id="collapseTwo"
+                    data-bs-parent="#accordionSection"
+                  >
+                    <div class="accordion-body">
+                      <table
+                        class="table accordion order_table"
+                        id="accordionSection4"
+                      >
+                        <thead>
+                          <tr>
+                            <th scope="col">OrderName</th>
+                            <th scope="col">total Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOtea3"
+                                  >
+                                    Tea
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">20</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseOtea3"
+                                  data-bs-parent="#accordionSection4"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapsecoffe3"
+                                  >
+                                    Coffe
+                                  </button>
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapsecoffe3"
+                                  data-bs-parent="#accordionSection4"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMilk3"
+                                  >
+                                    Milk
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseMilk3"
+                                  data-bs-parent="#accordionSection4"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNescafe3"
+                                  >
+                                    Nescafe
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseNescafe3"
+                                  data-bs-parent="#accordionSection4"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </div>
+            <div class="accordion-item">
+              <tr class="main_tr">
+                <td class="accord_class">
+                  <h2 class="accordion-header lessss">
+                    <button
+                      type="button"
+                      class="accordion-button collapsed"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree"
+                    >
+                      Hazem ali
+                    </button>
+                    <!-- <span>110</span> -->
+                  </h2>
+                </td>
+                <td class="tex_center">100</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div
+                    class="accordion-collapse collapse"
+                    id="collapseThree"
+                    data-bs-parent="#accordionSection"
+                  >
+                    <div class="accordion-body">
+                      <table
+                        class="table accordion order_table"
+                        id="accordionSection5"
+                      >
+                        <thead>
+                          <tr>
+                            <th scope="col">OrderName</th>
+                            <th scope="col">total Amount</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOtea4"
+                                  >
+                                    Tea
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">20</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseOtea4"
+                                  data-bs-parent="#accordionSection5"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapsecoffe4"
+                                  >
+                                    Coffe
+                                  </button>
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapsecoffe4"
+                                  data-bs-parent="#accordionSection5"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseMilk4"
+                                  >
+                                    Milk
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseMilk4"
+                                  data-bs-parent="#accordionSection5"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                          <div class="accordion-item">
+                            <tr class="main_tr">
+                              <td class="accord_class">
+                                <h2 class="accordion-header lessss">
+                                  <button
+                                    type="button"
+                                    class="accordion-button collapsed"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNescafe4"
+                                  >
+                                    Nescafe
+                                  </button>
+                                  <!-- <span>110</span> -->
+                                </h2>
+                              </td>
+                              <td class="tex_center">100</td>
+                            </tr>
+                            <tr>
+                              <td colspan="2">
+                                <div
+                                  class="accordion-collapse collapse"
+                                  id="collapseNescafe4"
+                                  data-bs-parent="#accordionSection5"
+                                >
+                                  <div class="accordion-body">
+                                    <div class="order_box">
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                      <img src="./img/ss.jpg" />
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                            </tr>
+                          </div>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </div>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="imag"></div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
