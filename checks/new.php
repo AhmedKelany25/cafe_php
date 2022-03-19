@@ -132,7 +132,7 @@ if ($conn->connect_error) {
                     for($i = 0 ; $i < sizeof($info_name); $i++){
                       $order_info =[];
                       $anchor = $info_name[$i]['name'];
-                      print_r($anchor) ;
+                    //   print_r($anchor) ;
                       echo "
                       
                       <div class='accordion-item'>
@@ -180,13 +180,14 @@ if ($conn->connect_error) {
                              ON O.orderID = PO.order_Id
                              LEFT JOIN users U
                              ON O.userID = U.id
-                             WHERE U.name = $anchor";
+                             WHERE U.name = '$anchor'";
                              $result_info = $conn->query($sql_info);
                              
-                             print_r($result_info);
+                            //  print_r($result_info);
                              
                              while ($row_info = mysqli_fetch_assoc($result_info)){
                                $order_info[] = $row_info ;
+                            //    print_r($order_info);
                              }
                              for($k = 0; $k < sizeof($order_info); $k++){
                               echo "
