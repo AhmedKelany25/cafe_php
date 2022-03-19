@@ -86,13 +86,13 @@
         <tbody>
             <?php
 
-            $dsn = 'mysql:dbname=user_base;host=127.0.0.1;port=3306;';
-            $user = 'abdallah';
+            $dsn = 'mysql:dbname=cafeteria;host=127.0.0.1;port=3306;';
+            $user = 'kelany';
             $password = 'root';
 
             try {
                 $db = new PDO($dsn, $user, $password);
-                $query = "select * from user";
+                $query = "select * from users";
                 $stmt = $db->prepare($query);
                 $stmt->execute();
                 $stds=$stmt->fetchAll(PDO::FETCH_OBJ);
@@ -102,10 +102,10 @@
                 foreach($stds as $std){
                     echo "
                     <tr>
-                        <td class='td_first'>" . $std->fname ." ".$std->lname."</td>
-                        <td class='td_second'> " . $std->room_id ."</td>
+                        <td class='td_first'>" . $std->name."</td>
+                        <td class='td_second'> " . $std->room ."</td>
                         <td >" ."<img class='table_img' src='./img/". $std->picture."'/>" . "</td>
-                        <td class='td_second'> " . $std->ext ."</td>
+                        <td class='td_second'> " . $std->email ."</td>
 
                         <td '>
                           <button> <a href='edit.php?index=" . $std->id  . "'>Edit</a></button>

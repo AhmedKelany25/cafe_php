@@ -47,8 +47,8 @@
 <?php
     if(!empty($_GET["index"])){
         $stdId=$_GET["index"];
-        $dsn = 'mysql:dbname=user_base;host=127.0.0.1;port=3306;';
-        $user = 'abdallah';
+        $dsn = 'mysql:dbname=cafeteria;host=127.0.0.1;port=3306;';
+        $user = 'kelany';
         $password = 'root';
         try {
             $db = new PDO($dsn, $user, $password);
@@ -76,12 +76,12 @@
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Product Name</label>
-            <input type="text" class="form-control my_info" placeholder="name"  placeholder="Name" name="name" value="<?php echo $std->name; ?>">
+            <input type="text" class="form-control my_info" placeholder="name"  placeholder="Name" name="ProductName" value="<?php echo $std->ProductName; ?>">
         </div>
 
         <div class="mb-3">
             <label for="price" class="form-label">Product Price</label>
-            <input type="text" class="form-control my_info" id="price" placeholder="price" name="price" value="<?php echo $std->price; ?>">
+            <input type="text" class="form-control my_info" id="price" placeholder="price" name="ProductPrice" value="<?php echo $std->ProductPrice; ?>">
         </div>
 
     <input type="submit" class="save" name="save" value="Save">
@@ -99,16 +99,16 @@
 <?php
     if(isset($_POST['save'])){
         $stdId=$_GET["index"];
-        $dsn = 'mysql:dbname=user_base;host=127.0.0.1;port=3306;';
-        $user = 'abdallah';
+        $dsn = 'mysql:dbname=cafeteria;host=127.0.0.1;port=3306;';
+        $user = 'kelany';
         $password = 'root';
         try {
             $db = new PDO($dsn, $user, $password);
-            $updateQuery="UPDATE products SET name = :name, price = :price WHERE id= :product_Id";
+            $updateQuery="UPDATE products SET ProductName = :ProductName, ProductPrice = :ProductPrice WHERE id= :product_Id";
             $updateStmt=$db->prepare($updateQuery);
             $updateStmt->execute([
-                'name' => $_POST['name'],
-                'price' => $_POST['price'],
+                'ProductName' => $_POST['ProductName'],
+                'ProductPrice' => $_POST['ProductPrice'],
                 "product_Id"=>$_POST["id"]
             ]);
         

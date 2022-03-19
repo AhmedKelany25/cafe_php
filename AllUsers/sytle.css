@@ -6,7 +6,8 @@ body {
     color: #3b3b3b;
     -webkit-font-smoothing: antialiased;
     font-smoothing: antialiased;
-    background-color: #e2cdb0;
+    /* background-color: #e2cdb0; */
+    background-image: linear-gradient(to right, #e2cdb0,#7b5520 );
   }
   /*-------------------navbar--------*/
   .navbar-brand img{

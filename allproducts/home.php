@@ -82,8 +82,8 @@
         <tbody>
             <?php
 
-            $dsn = 'mysql:dbname=user_base;host=127.0.0.1;port=3306;';
-            $user = 'abdallah';
+            $dsn = 'mysql:dbname=cafeteria;host=127.0.0.1;port=3306;';
+            $user = 'kelany';
             $password = 'root';
 
             try {
@@ -98,9 +98,9 @@
                 foreach($stds as $std){
                     echo "
                     <tr>
-                        <td class='td_first'>" . $std->name ."</td>
-                        <td class='td_second'> " . $std->price ."</td>
-                        <td >" ."<img class='table_img' src='./img/". $std->photo."'/>" . "</td>
+                        <td class='td_first'>" . $std->ProductName ."</td>
+                        <td class='td_second'> " . $std->ProductPrice ."</td>
+                        <td >" ."<img class='table_img' src='./img/". $std->ProductPicture."'/>" . "</td>
                         <td '>
                           <button> <a href='edit.php?index=" . $std->id  . "'>Edit</a></button>
                           <button> <a href='delete.php?index=" . $std->id  . "'>Delete</a></button>

@@ -47,12 +47,12 @@
 <?php
     if(!empty($_GET["index"])){
         $stdId=$_GET["index"];
-        $dsn = 'mysql:dbname=user_base;host=127.0.0.1;port=3306;';
-        $user = 'abdallah';
+        $dsn = 'mysql:dbname=cafeteria;host=127.0.0.1;port=3306;';
+        $user = 'kelany';
         $password = 'root';
         try {
             $db = new PDO($dsn, $user, $password);
-            $query="SELECT * FROM user WHERE id= :userr_Id";
+            $query="SELECT * FROM users WHERE id= :userr_Id";
             $stmt=$db->prepare($query);
             $stmt->execute(["userr_Id"=>$stdId]);
             $std=$stmt->fetchObject();
@@ -70,24 +70,17 @@
 <div class="container_f">
 <form method="POST">
     <a class="back" href="./home.php">Back</a>
-        <!-- <input type="hidden" class="form-control" id="id" placeholder="name@example.com"> -->
         <div class="mb-3">
             <input type="hidden" class="form-control" placeholder="id" name="id" value="<?php echo $std->id; ?>">
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">First Name</label>
-            <input type="text" class="form-control my_info" placeholder="name"  placeholder="Name" name="fname" value="<?php echo $std->fname; ?>">
-        </div>
-        <div class="mb-3">
-            <label for="name" class="form-label">Last Name</label>
-            <input type="text" class="form-control my_info" placeholder="name"  placeholder="Name" name="lname" value="<?php echo $std->lname; ?>">
+            <input type="text" class="form-control my_info" placeholder="name"  placeholder="Name" name="name" value="<?php echo $std->name; ?>">
         </div>
         <div class="mb-3">
             <label for="name" class="form-label">Email</label>
-            <input type="text" class="form-control my_info" placeholder="name"  placeholder="Name" name="email" value="<?php echo $std->email; ?>">
+            <input type="text" class="form-control my_info" placeholder="name"  placeholder="Email" name="email" value="<?php echo $std->email; ?>">
         </div>
-
-
 
     <input type="submit" class="save" name="save" value="Save">
 
@@ -99,16 +92,15 @@
 <?php
     if(isset($_POST['save'])){
         $stdId=$_GET["index"];
-        $dsn = 'mysql:dbname=user_base;host=127.0.0.1;port=3306;';
-        $user = 'abdallah';
+        $dsn = 'mysql:dbname=cafeteria;host=127.0.0.1;port=3306;';
+        $user = 'kelany';
         $password = 'root';
         try {
             $db = new PDO($dsn, $user, $password);
-            $updateQuery="UPDATE user SET fname = :fname,lname = :lname, email = :email  WHERE id= :userr_Id";
+            $updateQuery="UPDATE users SET name = :name, email = :email  WHERE id= :userr_Id";
             $updateStmt=$db->prepare($updateQuery);
             $updateStmt->execute([
-                'fname' => $_POST['fname'],
-                'lname' => $_POST['lname'],
+                'name' => $_POST['name'],
                 'email' => $_POST['email'],
 
                 "userr_Id"=>$_POST["id"]
